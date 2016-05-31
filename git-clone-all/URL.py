@@ -5,7 +5,7 @@ import time
 class URL:
 
     def __init__(self, url):
-        proxy = urllib2.ProxyHandler({'http': 'iit2013204:404104211@172.31.1.6:8080', 'https': 'iit2013204:404104211@172.31.1.6:8080'})
+        proxy = urllib2.ProxyHandler({'http': 'usr:pass@172.31.1.6:8080', 'https': 'usr:404104211@172.31.1.6:8080'})
         opener = urllib2.build_opener(proxy)
         urllib2.install_opener(opener)
         self.url = url
